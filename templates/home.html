@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annotation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h3 class="display-4">Welcome to Stage 4 🧑‍💻</h3>
+            <p class="lead">We appreciate your participation in this annotation.</p>
+            <hr class="my-4">
+            <h3 class="mb-4">Background</h3>
+            <p style="font-size: large;"> 
+                這個資料集目標是產生一個具有答案以及答案的證據的QA資料集，
+                除了參考文章與問題之外，它同時具有口語化的答案 (Answer) 與能佐證答案的證據 (Evidence)。</p>
+            <p style="font-size: large;">
+                我們的資料來源是MASH-QA， 
+                它是一個有關衛教並由專家經手的 Extractive QA 資料集 (Extractive 的意思是答案是直接從文章中擷取片段當作答案) 
+                我們保留這個資料集的其中 3 個部分：文章、問題、答案 (Extractive)。 
+                其中答案是由文章中的數個句子組成，句子間可能為連續或不連續片段。</p>
+            <p style="font-size: large;"> 
+                現在我們將答案 (Extractive) 視為證據 (Evidence)，
+                並且假設要完整回答這個題目必須涵蓋證據中的每個資訊。 </p>
+            <p style="font-size: large;">
+                那我們是如何利用 Extractive answer 來產生口語化的答案？
+                首先我們將 Evidence 合併成一段 text，接著我們藉由LLM (PaLM 2，一種大語言模型) 將 text 做總結與重寫，
+                目標是產生一個相對口語化且精簡的答案，並且這個答案要包含證據所提及的資訊。
+                </p>
+            <p style="font-size: large;">
+                那我們如何規範答案 (Answer) 包含證據 (Evidence) 中的資訊？
+                我們利用 textual entailment (文字蘊含，一種自然語言的文字關係) 檢驗來初步檢測， 
+                理想狀態是在語意上 Answer 必須包含且不超過 Evidence 中的資訊，
+                (換言之，答案並須包含Evidence，Evidence也要包含答案。)</p>
+            <hr class="my-4">
+            <h3 class="mb-4">Guideline</h3>
+            <!-- <p>Before you start, please read the following guidelines:</p> -->
+            <ul>
+                <li style="font-size: large;"> 
+                    你們的任務是對這個資料集的樣本進行審核，
+                    我們將 Evidence 視為 Question 的 Ground truth，
+                    需要評估的部分為 Answer。
+                    每個sample我們會調查四個面向，
+                    包含 1.在語意上，證據是否包含答案(答案中的資訊是否超過證據)，
+                    2.在語意上，答案是否包含證據(答案是否包含證據中每個句子中的資訊)，
+                    3.答案的通順程度，4.獨立於其他小題，答案之於文章與問題是否正確。</li>
+                <li style="font-size: large;">每個問題都有四個選項，請點擊選項下方的「Option definition」來查看選項的定義，並在閱讀後選擇最符合的選項。</li>
+                <li style="font-size: large;">資料集本身為英文，為了方便閱讀與理解，旁邊都有由google translate翻譯的中文版，若有發現異樣請閱讀英文版判斷，勿過度依賴翻譯。</li>
+                <li style="font-size: large;">由於篇幅的關係，sample描述並沒有包含context，如果想進一步了解context可以點下方 「source context」查看</li>
+                <li style="font-size: large;">全部做完之後請點選Submit，下一頁會看到「Download the result」，請點選下載，並將檔案回傳給我。</li>
+                </li>
+            </ul>
+            <hr class="my-4">
+            <h3 class="mb-4">How we'll use your response?</h3>
+            <p style="font-size: large;"> 
+                基於上一次投稿時收到的review，reviewer認為全然使用LLM而無人工驗證所產生的答案不能保證資料品質，
+                因此我們希望透過這次的annotation來進行人工驗證。</p>
+            <p style="font-size: large;">
+                我們會統計各位annotator的回覆來評判這個資料集的答案是否符合我們的標準，
+                若大部分的評分落在選項一，表示資料集品質符合我們的期待，反之則有待改進。
+                我們會將結果呈現在論文中並投稿到下一次的會議。我們並不會公開您的回覆或是您的個人資訊。
+            </p>
+            <hr class="my-4">
+            <p>Click the button below to start the questionnaire. It should take about 15-20 minutes to complete.</p>
+            <a class="btn btn-primary btn-lg" href="{{ url_for('form') }}" role="button">Start Annotation</a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
