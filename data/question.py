@@ -198,11 +198,11 @@ Contexts = [
         # 438,
         "Question": "How do children with impulsive tendencies differ from children with ADHD? 有衝動傾向的兒童與過動兒有何不同？",
         "Evidence": [
-            "1. Symptoms of this include: Impatience, having a hard time waiting to talk or react. The person might have difficulty waiting for their turn. 這種情況的症狀包括：不耐煩，很難等待說話或做出反應。此人可能很難等待輪到他們。",
-            "2. But in children with the disorder, these behaviors happen frequently—at home, in school, or during social interactions. 但對於患有這種疾病的兒童來說，這種情況經常發生——在家裡、學校或社交互動中。",
-            "3. They also affect the child's ability to function like other children of the same age or developmental level. 它們也會影響孩子像其他同齡或發展水平的孩子一樣發揮作用的能力。"
+            "1. Symptoms of this include: Impatience, having a hard time waiting to talk or react. The person might: Have difficulty waiting for their turn. 這種情況的症狀包括：不耐煩，很難等待說話或做出反應。此人可能很難等待輪到他們。",
+            "2. But in children with the disorder they happen a lot -- at home and school, or when visiting with friends. 但對於患有這種疾病的兒童來說，這種情況經常發生——在家裡和學校，或在拜訪朋友時。",
+            "3. They also mess with the child's ability to function like other children who are the same age or developmental level. 它們也會影響孩子像其他同齡或發展水平的孩子一樣發揮作用的能力。"
         ],
-        "Answer": "Children with impulsive tendencies may have difficulty waiting to talk or react, but they do not exhibit other symptoms of ADHD. In contrast, children with ADHD have more severe impulsive tendencies that interfere with their ability to function like other children their age. 有衝動傾向的兒童可能很難等待說話或做出反應，但他們沒有其他過動症症狀。患有多動症的兒童有更嚴重的衝動傾向，這會影響他們像其他同齡兒童一樣的功能。"
+        "Answer": "Children with impulsive tendencies may have a hard time waiting to talk or react, but they do not have other symptoms of ADHD. Children with ADHD have impulsive tendencies that are more severe and interfere with their ability to function like other children their age.有衝動傾向的兒童可能很難等待說話或做出反應，但他們沒有其他過動症症狀。患有多動症的兒童有更嚴重的衝動傾向，會影響他們像其他同齡兒童一樣的生活能力。"
     }
 ]
 
