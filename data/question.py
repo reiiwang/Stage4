@@ -192,7 +192,7 @@ Contexts = [
             "1. Toxic adenomas: Nodules develop in the thyroid gland and begin to secrete thyroid hormones, upsetting the body's chemical balance; some goiters may contain several of these nodules. 有毒腺瘤：甲狀腺結節形成並開始分泌甲狀腺激素，擾亂體內的化學平衡；有些甲狀腺腫可能含有多個這樣的結節。",
             "2. You may be at greater risk for developing hypothyroidism if you have had thyroid problems in the past. 如果您過去曾患有甲狀腺問題，那麼您患甲狀腺功能減退症的風險可能會更大。"
         ],
-        "Answer": "Thyroid cancer can occur when nodules develop in the thyroid gland and begin to secrete thyroid hormones, upsetting the body's chemical balance. 甲狀腺癌可以在甲狀腺中出現結節並開始分泌甲狀腺激素，擾亂體內的化學平衡時發生。"
+        "Answer": "Thyroid cancer can occur when nodules develop in the thyroid gland and begin to secrete thyroid hormones, upsetting the body's chemical balance.當甲狀腺中出現結節並開始分泌甲狀腺激素，擾亂體內的化學平衡時，就會發生甲狀腺癌。"
     },
     {
         # 438,
