@@ -132,7 +132,7 @@ Contexts = [
             "1. One way to start is to change the liquid you put in your body every day. 一種方法是改變每天注射到體內的液體。",
             "2. Your doctor may recommend that you: Drink no more than 2 quarts of liquids a day Steer clear of drinks with caffeine, such as coffee, tea, and sodas Have no more than one alcoholic drink per day Change your behavior. 您的醫生可能會建議您：每天喝的液體不超過 2 誇脫 避免飲用含咖啡因的飲料，例如咖啡、茶和蘇打水 每天喝的酒精飲料不超過一杯 改變您的行為。"
         ],
-        "Answer": "To treat bladder control issues caused by multiple sclerosis, consider dietary changes such as limiting fluid intake to no more than 2 quarts per day, avoiding caffeine-containing drinks, and limiting alcohol to one drink per day. Additionally, change your behavior by urinating on a regular schedule and avoiding holding your urine for long periods. 要治療多發性硬化症引起的膀胱控制問題，您應該考慮飲食改變，例如將液體攝取量限制為每天不超過 2 誇脫，避免喝含咖啡因的飲料，並將酒精攝取量限制為每天不超過一杯。此外，通過定期排尿和避免長時間憋尿來改變自己的行為。"
+        "Answer": "To treat bladder control that comes from multiple sclerosis, you should consider making changes to your diet, such as limiting your fluid intake to no more than 2 quarts of liquids a day, avoiding drinks with caffeine, and limiting your alcohol intake to no more than one drink per day. You should also change your behavior by urinating on a regular schedule and avoiding holding your urine for long periods of time. 要治療多發性硬化症引起的膀胱控制，您應該考慮改變飲食，例如將液體攝取量限制為每天不超過 2 誇脫，避免喝含咖啡因的飲料，並將酒精攝取量限制為不超過每天一杯。您還應該改變自己的行為，定期排尿並避免長時間憋尿。"
     },
     {
         # 1003,
